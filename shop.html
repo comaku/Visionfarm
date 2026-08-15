@@ -3152,83 +3152,341 @@ a {
 
 const products = [
 
+    // =========================
+    // BROILERS
+    // =========================
+
     {
         id: 1,
-
-        name: "Fresh Chicken",
-
-        category: "chicken",
-
-        price: 15000,
-
-        image: "images/chicken.jpg",
-
-        shortDescription:
-            "Freshly raised farm chicken.",
-
-        description:
-            "Quality farm-raised chicken produced with careful attention to healthy growth and responsible poultry management. Perfect for home cooking, restaurants and events."
+        name: "Day-Old Broiler",
+        category: "Broilers",
+        price: 1300,
+        unit: "per bird",
+        age: "Day Old",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy day-old broiler chicks suitable for farmers starting a new poultry production cycle."
     },
-
 
     {
         id: 2,
-
-        name: "Foreign Turkey",
-
-        category: "turkey",
-
-        price: 45000,
-
-        image: "images/turkey.jpg",
-
-        shortDescription:
-            "Premium foreign turkey.",
-
-        description:
-            "Premium foreign turkey suitable for family meals, celebrations, restaurants and special occasions. Contact us for larger quantities and bulk orders."
+        name: "4-Week Broiler",
+        category: "Broilers",
+        price: 5000,
+        unit: "per bird",
+        age: "4 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy four-week-old broiler chickens raised for fast growth and quality meat production."
     },
-
 
     {
         id: 3,
-
-        name: "Fresh Snail",
-
-        category: "snail",
-
-        price: 5000,
-
-        image: "images/snail.jpg",
-
-        shortDescription:
-            "Fresh farm-raised snail.",
-
-        description:
-            "Fresh, carefully managed farm-raised snails. A nutritious protein option prepared for customers looking for quality farm produce."
+        name: "Mature Broiler",
+        category: "Broilers",
+        price: 15000,
+        maxPrice: 20000,
+        unit: "per bird",
+        age: "Mature",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature broiler chickens suitable for customers looking for quality birds for consumption or commercial purposes."
     },
 
 
+    // =========================
+    // FOREIGN TURKEY
+    // =========================
+
     {
         id: 4,
+        name: "Day-Old Foreign Turkey",
+        category: "Foreign Turkey",
+        price: 9500,
+        unit: "per bird",
+        age: "Day Old",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Quality foreign turkey chicks suitable for farmers starting turkey production."
+    },
 
-        name: "Fresh Catfish",
+    {
+        id: 5,
+        name: "4-Week Foreign Turkey",
+        category: "Foreign Turkey",
+        price: 17000,
+        unit: "per bird",
+        age: "4 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy four-week-old foreign turkeys ready for continued growth and development."
+    },
 
-        category: "catfish",
+    {
+        id: 6,
+        name: "8-Week Foreign Turkey",
+        category: "Foreign Turkey",
+        price: 25000,
+        unit: "per bird",
+        age: "8 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Well-developed eight-week-old foreign turkeys suitable for farmers seeking more mature birds."
+    },
 
-        price: 7500,
+    {
+        id: 7,
+        name: "Mature Male Foreign Turkey",
+        category: "Foreign Turkey",
+        price: 80000,
+        maxPrice: 120000,
+        unit: "per bird",
+        age: "Mature Male",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature male foreign turkey suitable for breeding, farming and commercial production."
+    },
 
-        image: "images/catfish.jpg",
+    {
+        id: 8,
+        name: "Mature Female Foreign Turkey",
+        category: "Foreign Turkey",
+        price: 60000,
+        maxPrice: 80000,
+        unit: "per bird",
+        age: "Mature Female",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature female foreign turkey suitable for breeding and commercial poultry production."
+    },
 
-        shortDescription:
-            "Fresh farm-raised catfish.",
 
-        description:
-            "Fresh catfish raised under carefully managed farming conditions. Available for individuals, restaurants, events and bulk buyers."
+    // =========================
+    // LOCAL TURKEY
+    // =========================
+
+    {
+        id: 9,
+        name: "Day-Old Local Turkey",
+        category: "Local Turkey",
+        price: 3500,
+        unit: "per bird",
+        age: "Day Old",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Locally bred turkey chicks suitable for farmers looking to begin turkey production."
+    },
+
+    {
+        id: 10,
+        name: "4-Week Local Turkey",
+        category: "Local Turkey",
+        price: 7000,
+        unit: "per bird",
+        age: "4 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy four-week-old local turkeys ready for continued growth."
+    },
+
+    {
+        id: 11,
+        name: "8-Week Local Turkey",
+        category: "Local Turkey",
+        price: 12000,
+        unit: "per bird",
+        age: "8 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Well-developed eight-week-old local turkeys suitable for continued farming."
+    },
+
+    {
+        id: 12,
+        name: "Mature Male Local Turkey",
+        category: "Local Turkey",
+        price: 40000,
+        maxPrice: 60000,
+        unit: "per bird",
+        age: "Mature Male",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature male local turkey suitable for breeding and commercial production."
+    },
+
+    {
+        id: 13,
+        name: "Mature Female Local Turkey",
+        category: "Local Turkey",
+        price: 20000,
+        maxPrice: 30000,
+        unit: "per bird",
+        age: "Mature Female",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature female local turkey suitable for breeding and poultry production."
+    },
+
+
+    // =========================
+    // LAYERS
+    // =========================
+
+    {
+        id: 14,
+        name: "Day-Old Layer",
+        category: "Layers",
+        price: 3500,
+        unit: "per bird",
+        age: "Day Old",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Quality day-old layer chicks suitable for farmers starting an egg-production flock."
+    },
+
+    {
+        id: 15,
+        name: "4-Week Layer",
+        category: "Layers",
+        price: 5000,
+        unit: "per bird",
+        age: "4 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy four-week-old layer birds suitable for continued poultry development."
+    },
+
+    {
+        id: 16,
+        name: "6-7 Week Layer",
+        category: "Layers",
+        price: 7000,
+        unit: "per bird",
+        age: "6-7 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Growing layer birds suitable for farmers developing an egg-production flock."
+    },
+
+    {
+        id: 17,
+        name: "18-20 Week Layer",
+        category: "Layers",
+        price: 10000,
+        maxPrice: 12000,
+        unit: "per bird",
+        age: "18-20 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Advanced-age layer birds approaching productive maturity and suitable for egg-production operations."
+    },
+
+
+    // =========================
+    // NOILER
+    // =========================
+
+    {
+        id: 18,
+        name: "Day-Old Noiler",
+        category: "Noiler",
+        price: 1100,
+        unit: "per bird",
+        age: "Day Old",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Day-old Noiler chicks suitable for farmers interested in dual-purpose poultry production."
+    },
+
+    {
+        id: 19,
+        name: "4-Week Noiler",
+        category: "Noiler",
+        price: 3000,
+        unit: "per bird",
+        age: "4 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy four-week-old Noiler birds suitable for continued meat and egg production."
+    },
+
+    {
+        id: 20,
+        name: "6-Week Noiler",
+        category: "Noiler",
+        price: 4500,
+        unit: "per bird",
+        age: "6 Weeks",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Growing Noiler birds suitable for farmers looking for a versatile dual-purpose poultry breed."
+    },
+
+    {
+        id: 21,
+        name: "Mature Male Noiler",
+        category: "Noiler",
+        price: 15000,
+        maxPrice: 20000,
+        unit: "per bird",
+        age: "Mature Male",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature male Noiler suitable for meat production and breeding."
+    },
+
+    {
+        id: 22,
+        name: "Mature Female Noiler",
+        category: "Noiler",
+        price: 12000,
+        maxPrice: 15000,
+        unit: "per bird",
+        age: "Mature Female",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Mature female Noiler suitable for meat, egg production and breeding."
+    },
+
+
+    // =========================
+    // CATFISH
+    // =========================
+
+    {
+        id: 23,
+        name: "Catfish Fingerlings",
+        category: "Catfish",
+        price: 60,
+        unit: "per fish",
+        age: "Fingerling",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Healthy catfish fingerlings suitable for stocking new and expanding fish ponds."
+    },
+
+    {
+        id: 24,
+        name: "Catfish Post-Fingerlings",
+        category: "Catfish",
+        price: 10,
+        unit: "per fish",
+        age: "Post-Fingerling",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Post-fingerling catfish suitable for farmers progressing to the next stage of fish growth."
+    },
+
+    {
+        id: 25,
+        name: "Jumbo Catfish",
+        category: "Catfish",
+        price: 150,
+        unit: "per fish",
+        age: "Jumbo",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Larger catfish suitable for pond stocking and continued commercial fish production."
+    },
+
+    {
+        id: 26,
+        name: "Melonch Catfish",
+        category: "Catfish",
+        price: 2500,
+        unit: "per kg",
+        age: "Melonch",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Quality catfish sold by weight for consumption and commercial purposes."
+    },
+
+    {
+        id: 27,
+        name: "Table-Size Catfish",
+        category: "Catfish",
+        price: 300,
+        unit: "per kg",
+        age: "Table Size",
+        image: "YOUR_IMAGE_URL_HERE",
+        description: "Fresh table-size catfish suitable for households, restaurants, food businesses and other customers."
     }
 
 ];
-
 
 /* =========================================================
    GLOBAL STATE
